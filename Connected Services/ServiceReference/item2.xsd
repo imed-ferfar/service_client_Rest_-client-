@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServeurActivite_Csharp_java" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServeurActivite_Csharp_java" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Demande">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="host" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Demande" nillable="true" type="tns:Demande" />
+</xs:schema>
